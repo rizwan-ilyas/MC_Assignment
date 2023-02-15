@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:backgroundTint="#D6D3D3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/surah"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="99dp"
+        android:text="Read by Surah"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/git"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/para" />
+
+    <Button
+        android:id="@+id/para"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="69dp"
+        android:text="Read by JUZ"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/surah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView1" />
+
+    <Button
+        android:id="@+id/git"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="145dp"
+        android:text="Repository"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surah" />
+
+    <TextView
+        android:id="@+id/txtView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="112dp"
+        android:text="Al - Quran"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/para"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
